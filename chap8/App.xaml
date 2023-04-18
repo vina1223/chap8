@@ -1,0 +1,131 @@
+﻿<?xml version = "1.0" encoding = "UTF-8" ?>
+<Application xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:chap8"
+             x:Class="chap8.App">
+    <Application.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="Resources/Styles/Colors.xaml" />
+                <ResourceDictionary Source="Resources/Styles/Styles.xaml" />
+                <ResourceDictionary Source="Resources/Styles/ResetPasswordStyle.xaml"/>
+            </ResourceDictionary.MergedDictionaries>
+
+            <Style x:Key="TextStyle" TargetType="Label">
+                <Setter  Property="HorizontalOptions"
+                         Value="Center"/>
+                <Setter Property="TextColor"
+                        Value="Gray"/>
+                <Setter Property="FontFamily"
+                        Value="Roboto-Bold"/>
+                <Setter Property="FontSize"
+                        Value="15"/>
+            </Style>
+            <Style x:Key="TextNo" TargetType="Label">
+                <Setter Property="HorizontalOptions"
+                        Value="Center"/>
+                <Setter Property="TextColor"
+                        Value="Black"/>
+                <Setter Property="FontAttributes"
+                        Value="Bold"/>
+                <Setter Property="FontFamily"
+                        Value="Roboto-Bold"/>
+            </Style>
+
+            <Style x:Key="FrameStyle1" TargetType="Frame">
+                <Setter Property="CornerRadius"
+                        Value="10"/>
+                <Setter Property="BackgroundColor"
+                        Value="SkyBlue"/>
+                <Setter Property="BorderColor"
+                        Value="SkyBlue"/>
+            </Style>
+
+            <Style x:Key="FrameStyle2" TargetType="Frame">
+                <Setter Property="CornerRadius"
+                        Value="10"/>
+                <Setter Property="BackgroundColor"
+                        Value="Orange"/>
+                <Setter Property="BorderColor"
+                        Value="Orange"/>
+            </Style>
+
+            <Style x:Key="InnerFrameStyle" TargetType="Frame">
+                <Setter Property="BackgroundColor"
+                        Value="White"/>
+                <Setter Property="CornerRadius"
+                        Value="10"/>
+                <Setter Property="HorizontalOptions"
+                        Value="StartAndExpand"/>
+                <Setter Property="Margin"
+                        Value="0,0,0,10"/>
+                <Setter Property="BorderColor"
+                        Value="White"/>
+            </Style>
+
+            <Style x:Key="InnerLabelStyleOne" TargetType="Label">
+                <Setter Property="TextColor"
+                        Value="Gray"/> 
+                <Setter Property="Margin"
+                        Value="0,0,0,5"/>
+                <Setter Property="FontFamily"
+                        Value="Roboto-Bold"/>
+            </Style>
+
+            <Style x:Key="InnerLableStyleTwo" TargetType="Label">
+                <Setter Property="FontAttributes"
+                        Value="Bold"/>
+                <Setter Property="TextColor"
+                        Value="Black"/>
+                <Setter Property="VerticalTextAlignment"
+                        Value="End"/>
+                <Setter Property="FontFamily"
+                        Value="Roboto-Bold"/>
+
+            </Style>
+            <Style x:Key="InnerLableStyleThree" TargetType="Label">
+                <Setter Property="FontAttributes"
+                        Value="Bold"/>
+                <Setter Property="TextColor"
+                        Value="Black"/>
+                <Setter Property="VerticalTextAlignment"
+                        Value="Center"/>
+                <Setter Property="FontFamily"
+                        Value="Roboto-Bold"/>
+            </Style>
+
+            <Style x:Key="Title" TargetType="Label">
+                <Setter Property="FontAttributes"
+                        Value="Bold"/>
+                <Setter Property="TextColor"
+                        Value="Black"/>
+                <Setter Property="FontAttributes"
+                        Value="Bold"/>
+                <Setter Property="FontSize"
+                        Value="20"/>
+                <Setter Property="Margin"
+                        Value="0,0,0,30"/>
+                <Setter Property="FontFamily"
+                        Value="Roboto-Bold"/>
+            </Style>
+
+            <Style x:Key="BuyLabel" TargetType="Label">
+                <Setter Property="VerticalOptions"
+                        Value="EndAndExpand"/>
+                <Setter Property="TextColor"
+                        Value="Black"/>
+                <Setter Property="FontFamily"
+                        Value="Roboto-Bold"/>
+                <Setter Property="Margin"
+                        Value="0,10,0,0"/>
+
+            </Style>
+            <Style x:Key="ImageStyle" TargetType="Image">
+                <Setter Property="HorizontalOptions"
+                        Value="End"/>
+
+            </Style>
+
+        </ResourceDictionary>
+    </Application.Resources>
+</Application>
