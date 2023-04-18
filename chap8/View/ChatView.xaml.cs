@@ -1,4 +1,4 @@
-namespace chap8.View.Reset_Password;
+namespace chap8.View;
 
 public partial class ChatView : ContentPage
 {

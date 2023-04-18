@@ -1,14 +1,5 @@
-﻿using Android.Net.Wifi.Aware;
-using Android.Provider;
-using Microsoft.Maui.Animations;
-using Microsoft.Maui.Controls;
-using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Linq;
+﻿using System.ComponentModel;
 using System.Runtime.CompilerServices;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Input;
 
 namespace chap8.ViweModel
