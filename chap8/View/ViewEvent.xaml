@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="chap8.View.ViewEvent"
+             Title="ViewEvent">
+    <ScrollView>
+        <StackLayout>
+            <Grid RowDefinitions="*,Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto"
+                  Style="{DynamicResource BackGroundColor}"
+                  >
+                <Image Source="taylorswift"
+                       Grid.Row="0"
+                       BackgroundColor="WhiteSmoke"
+                       
+                       />
+                <Label Text="Taylor Swift"
+                       Grid.Row="1"
+                       Style="{DynamicResource ViewEventTitleStyle }"
+                       Margin="10,20,0,5"
+                       />
+                <Grid ColumnDefinitions="Auto,*"
+                      Grid.Row="2"
+                      >
+                    <Label Grid.Column="0"
+                           Style="{DynamicResource ViewEventDateTimeStyles}"
+                           Margin="10,4"
+                           >
+                        <Label.FormattedText>
+                            <FormattedString>
+                                <Span Text="Oct 08"/>
+                                <Span Text="19.30-21.00"/>
+                            </FormattedString>
+                        </Label.FormattedText>
+
+                    </Label>
+                </Grid>
+                <Line HeightRequest="0.5"
+                      BackgroundColor="DarkGray"
+                      Grid.Row="3"
+                      Margin="0,20,0,20"
+                      />
+                <HorizontalStackLayout Grid.Row="4"
+                                       Spacing="15"
+                                       Margin="10,0,0,15"
+                                       >
+                    <Frame HeightRequest="30"
+                           WidthRequest="30"
+                           CornerRadius="15"
+                           Padding="0"
+                           >
+                        <Image Source="dotnet_bot"/>
+                    </Frame>
+                    <Frame HeightRequest="30"
+                           WidthRequest="30"
+                           CornerRadius="15"
+                           Padding="0"
+                           >
+                        <Image Source="dotnet_bot"/>
+                    </Frame>
+                    <Frame HeightRequest="30"
+                           WidthRequest="30"
+                           CornerRadius="15"
+                           Padding="0"
+                           >
+                        <Image Source="dotnet_bot"/>
+                    </Frame>
+                    <Frame HeightRequest="30"
+                           WidthRequest="30"
+                           CornerRadius="15"
+                           Padding="0"
+                           >
+                        <Label Text="+3"
+                               VerticalOptions="Center"
+                               HorizontalOptions="Center"
+                               />
+                    </Frame>
+                    
+                </HorizontalStackLayout>
+
+                <Grid ColumnDefinitions="Auto,*"
+                      Grid.Row="5"
+                      ColumnSpacing="10"
+                      Margin="10,0,0,12"
+                      >
+
+                    <Image Source="dotnet_bot"
+                           HeightRequest="30"
+                           WidthRequest="30"
+                           Grid.Column="0"
+                           />
+                    <Label Grid.Column="1"
+                           VerticalOptions="Center"
+                           
+                           >
+                        <Label.FormattedText>
+                            <FormattedString>
+                                <Span Text="$98"
+                                      Style="{DynamicResource ViewEventTextStyle}"
+                                      />
+                                <Span Text="-"/>
+                                <Span Text="$165"
+                                      Style="{DynamicResource ViewEventTextStyle}"
+                                      />
+                            </FormattedString>
+                        </Label.FormattedText>
+                    </Label>
+
+                </Grid>
+
+                <Grid ColumnDefinitions="Auto,*"
+                      Grid.Row="6"
+                      ColumnSpacing="10"
+                      Margin="10,0"
+                      >
+
+                    <Image Source="dotnet_bot"
+                           HeightRequest="30"
+                           WidthRequest="30"
+                           Grid.Column="0"
+                           />
+                    <Label Grid.Column="1"
+                           VerticalOptions="Center"
+                           Text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+                           Style="{DynamicResource ViewEventTextStyle}"
+                           >
+                           
+                    </Label>
+
+                </Grid>
+                <Grid ColumnDefinitions="Auto,*,*"
+                      Grid.Row="7"
+                      ColumnSpacing="10"
+                      Margin="10,10,0,0"
+                      >
+
+                    <Image Source="dotnet_bot"
+                           HeightRequest="30"
+                           WidthRequest="30"
+                           Grid.Column="0"
+                           />
+                    <Label Grid.Column="1"
+                           VerticalOptions="Center"
+                           Text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do adipiscing elit, sed do."
+                           Style="{DynamicResource ViewEventTextStyle}"
+                           >
+
+                    </Label>
+                    <Frame Padding="0"
+                           Grid.Column="2"
+                           HeightRequest="80"
+                           WidthRequest="100"
+                           CornerRadius="40"
+                           >
+                        <Image Source="dotnet_bot"/>
+                    </Frame>
+
+                </Grid>
+                <Line HeightRequest="1"
+                      Margin="0,20,0,20"
+                      BackgroundColor="DarkGray"
+                      Grid.Row="8"/>
+                <Grid ColumnDefinitions="*,*,*,*"
+                      Grid.Row="9"
+                      Margin="10,0"
+                      >
+                    <HorizontalStackLayout Grid.Column="0">
+                        <Image Source="dotnet_bot"
+                               HeightRequest="30"
+                               WidthRequest="30"
+                               />
+                        <Label Text="26"
+                               VerticalOptions="Center"
+                               Style="{DynamicResource ViewEventIconTextStyles}"
+                               />
+                    </HorizontalStackLayout>
+                    <HorizontalStackLayout Grid.Column="1">
+                        <Image Source="dotnet_bot"
+                               HeightRequest="30"
+                               WidthRequest="30"
+                               />
+                        <Label Text="26"
+                               VerticalOptions="Center"
+                               />
+                    </HorizontalStackLayout>
+                    <HorizontalStackLayout Grid.Column="2">
+                        <Image Source="dotnet_bot"
+                               HeightRequest="30"
+                               WidthRequest="30"
+                               />
+                        <Label Text="26"
+                               VerticalOptions="Center"
+                               />
+                    </HorizontalStackLayout>
+                    <HorizontalStackLayout Grid.Column="3">
+                        <Image Source="dotnet_bot"
+                               HeightRequest="30"
+                               WidthRequest="30"
+                               />
+                        <Label Text="26"
+                               VerticalOptions="Center"
+                               />
+                    </HorizontalStackLayout>
+
+                </Grid>
+            </Grid>
+            <Border VerticalOptions="EndAndExpand"
+                    Padding="15"
+                    StrokeShape="RoundRectangle 20,20,0,0"
+                    Stroke="White">
+                <Border.Shadow>
+                    <Shadow Opacity="0.8"
+                            Radius="70"
+                            Brush="Gray"
+                            Offset="-30,-30"
+                            />
+                </Border.Shadow>
+                <Button Text="Show me 67 Details"
+                        Style="{DynamicResource ButtonStyle}"
+                        />
+            </Border>
+        </StackLayout>
+    </ScrollView>
+</ContentPage>

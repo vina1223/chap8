@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="chap8.View.Login"
+             Title="Login">
+    <ContentPage.Resources>
+        <Style x:Key="LabelStyle" 
+               TargetType="Label">
+            <Setter Property="TextColor"
+                    Value="Red"/>
+
+        </Style>
+        <Style x:Key="BorderStyle"
+               TargetType="Border">
+            <Setter Property="Stroke"
+                    Value="Red"/>
+        </Style>
+
+        <Style x:Key="DefaultLabelStyle"
+               TargetType="Label">
+            <Setter Property="TextColor"
+                    Value="Black"/>
+        </Style>
+
+        <Style x:Key="DefaultBorderStyle"
+               TargetType="Label">
+            <Setter Property="TextColor"
+                    Value="Black"/>
+        </Style>
+    </ContentPage.Resources>
+    
+    
+    <ScrollView>
+        <StackLayout Spacing="15">
+            <Label Text="UserName"
+                   Style="{DynamicResource DefaultLabelStyle}"
+                   />
+            <Border Style="{DynamicResource DefaultBorderStyle}">
+                <Entry Placeholder=""
+                       x:Name="Username"
+                       />
+            </Border>
+            <Label Text="Password"
+                   Style="{DynamicResource DefaultLabelStyle}"
+                   />
+            <Border Style="{DynamicResource DefaultBorderStyle}">
+                <Entry Placeholder=""
+                       x:Name="Password"
+                       />
+            </Border>
+            <Button Text="Login"
+                    Clicked="ChangeStyleButtonClicked"
+                    />
+        </StackLayout>
+    </ScrollView>
+</ContentPage>

@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<?xaml-comp compile="true" ?>
+<ResourceDictionary xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="chap8.Resources.Styles.ViewEvent">
+    <Style x:Key="ViewEventTitleStyle"
+       TargetType="Label">
+        <Setter Property="FontSize"
+                Value="35"/>
+        <Setter Property="FontAttributes"
+                Value="Bold"/>
+        <Setter Property="TextColor"
+                Value="Black"/>
+        <Setter Property="FontFamily"
+                Value="Roboto-Regular"/>
+    </Style>
+
+    <Style x:Key="BackGroundColor" 
+           TargetType="Grid">
+        <Setter Property="BackgroundColor"
+                Value="{AppThemeBinding Light=White, Dark=Black}"/>
+    </Style>
+
+    <Style x:Key="ViewEventDateTimeStyles"
+           TargetType="Label">
+        <Setter Property="TextColor"
+                Value="{AppThemeBinding Light=Red, Dark=Red}"/>
+        <Setter Property="FontSize"
+                Value="18"/>
+    </Style>
+
+    <Style x:Key="ViewEventTextStyle"
+           TargetType="Label">
+        <Setter Property="TextColor"
+                Value="{AppThemeBinding Light=Gray, Dark=White}"/>
+        <Setter Property="FontFamily"
+                Value="Roboto-Regular"/>
+    </Style>
+
+    <Style x:Key="ViewEventIconTextStyles"
+           TargetType="Label"
+           >
+        <Setter Property="TextColor"
+                Value="{AppThemeBinding Light=DarkGray, Dark=White}"/>
+    </Style>
+
+    <Style x:Key="ViewEventButtonStyle"
+           TargetType="Button">
+        <Setter Property="BackgroundColor"
+                Value="{AppThemeBinding Light=Pink, Dark=Pink}"/>
+        <Setter Property="TextColor"
+                Value="WhiteSmoke"/>
+        <Setter Property="CornerRadius"
+                Value="25"/>
+        <Setter Property="FontSize"
+                Value="Medium"/>
+    </Style>
+</ResourceDictionary>

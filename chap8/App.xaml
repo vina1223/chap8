@@ -9,7 +9,7 @@
                 <ResourceDictionary Source="Resources/Styles/Colors.xaml" />
                 <ResourceDictionary Source="Resources/Styles/Styles.xaml" />
                 <ResourceDictionary Source="Resources/Styles/ResetPasswordStyle.xaml"/>
-                <ResourceDictionary Source="Resources/Styles/ChatStyles.xaml"/>
+                <ResourceDictionary Source="Resources/Styles/ViewEvent.xaml"/>
             </ResourceDictionary.MergedDictionaries>
 
             <Style x:Key="TextStyle" TargetType="Label">
